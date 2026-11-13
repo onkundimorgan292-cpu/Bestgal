@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BestLady Menyinkwa - From 250 - FREE Delivery</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,system-ui;background:#fff1f7;color:#111}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,#ff1493,#ff69b4);padding:14px 16px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.hero{background:linear-gradient(135deg,#ff1493,#ff69b4,#ffb6d9);color:#fff;text-align:center;padding:36px 16px}
+.hero h1{font-size:28px;font-weight:900;line-height:1.1;margin:12px 0}
+.pill{background:rgba(255,255,255,.2);backdrop-filter:blur(10px);display:inline-block;padding:6px 14px;border-radius:999px;font-size:11px;font-weight:800}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:800;font-size:13px;margin:6px;text-decoration:none;cursor:pointer}
+.btn-white{background:#fff;color:#ff1493}.btn-black{background:#111;color:#fff}
+.filters{position:sticky;top:56px;z-index:40;background:#fff1f7;padding:10px 16px;display:flex;gap:8px;overflow-x:auto;border-bottom:1px solid #fecdd3}
+.filters button{white-space:nowrap;padding:8px 14px;border-radius:999px;border:1px solid #fecdd3;background:#fff;font-size:12px;font-weight:700;cursor:pointer}
+.filters button.active{background:linear-gradient(90deg,#ff1493,#ff69b4);color:#fff}
+.grid{padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px} @media(min-width:768px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border:2px solid #ffb6d9;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px rgba(255,20,147,.12)}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#fafafa}
+.img-wrap{position:relative}.badge-off{position:absolute;top:8px;left:8px;background:#111;color:#fff;font-size:10px;font-weight:800;padding:4px 8px;border-radius:8px}
+.badge-free{position:absolute;top:8px;right:8px;background:#dcfce7;color:#16a34a;font-size:9px;font-weight:800;padding:4px 8px;border-radius:8px}
+.card-body{padding:10px}.name{font-size:12px;font-weight:700;line-height:1.3;height:32px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.old{font-size:11px;color:#9ca3af;text-decoration:line-through}
+.new{display:inline-block;margin-top:4px;background:linear-gradient(90deg,#ff1493,#ff69b4,#facc15,#ff1493);background-size:200% 100%;animation:shine 2s infinite;color:#fff;font-weight:900;font-size:14px;padding:5px 10px;border-radius:10px;box-shadow:0 4px 12px rgba(255,20,147,.3)}
+@keyframes shine{0%{background-position:0%}100%{background-position:200%}}
+.card-actions{display:flex;gap:6px;margin-top:8px}.card-actions button{flex:1;padding:9px;border-radius:10px;font-weight:800;font-size:11px;cursor:pointer;border:none}
+.add{background:#111;color:#fff}.wa{background:#fff;border:1px solid #e5e7eb!important}
+.cart{position:fixed;top:0;right:-100%;width:88%;max-width:380px;height:100vh;background:#fff;border-left:2px solid #ffb6d9;z-index:100;transition:.3s;overflow:auto}
+.cart.open{right:0}.cart-header{background:linear-gradient(90deg,#ff1493,#ff69b4);color:#fff;padding:16px;display:flex;justify-content:space-between;font-weight:800}
+.booking{background:#fff;border:2px solid #ffb6d9;border-radius:18px;margin:16px;padding:20px}
+.booking input,.booking select{width:100%;padding:12px;border:1px solid #fecdd3;border-radius:10px;margin:6px 0;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<div>👑 BestLady</div>
+<div style="display:flex;gap:10px;align-items:center">
+<span style="background:#fdf2f8;color:#ff1493;padding:4px 10px;border-radius:999px;font-size:10px;font-weight:800">📍 Menyinkwa • FREE Delivery</span>
+<span id="cartCount" style="background:#facc15;color:#111;padding:6px 12px;border-radius:999px;font-size:11px;font-weight:900;cursor:pointer" onclick="openCart()">🛒 0</span>
+</div>
+</header>
+
+<div class="hero">
+<div class="pill">MENYINKWA STORE • FREE DELIVERY • 0116162159 • BOOK AT DEPOSIT</div>
+<h1>BestLady Pink Store For Ladies From KSH 250 💖✨</h1>
+<p style="font-size:13px;opacity:.9;margin-bottom:14px">Denim • Tumblers • Flats • Slides • Sandals • AIRFORCE • Free Delivery Menyinkwa • Book at Deposit</p>
+<a href="#shop" class="btn btn-white">Shop 9 Pink Deals 💖</a>
+<a href="https://wa.me/254116162159" class="btn btn-black">WhatsApp Order</a>
+<div style="display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap">
+<div style="background:rgba(255,255,255,.2);padding:8px 12px;border-radius:12px;font-size:11px;font-weight:700">From 250 ✨</div>
+<div style="background:rgba(255,255,255,.2);padding:8px 12px;border-radius:12px;font-size:11px;font-weight:700">FREE Delivery 🚚 Menyinkwa</div>
+<div style="background:rgba(255,255,255,.2);padding:8px 12px;border-radius:12px;font-size:11px;font-weight:700">Book at Deposit 💰</div>
+</div>
+</div>
+
+<div id="shop" style="padding:16px 16px 0">
+<h2 style="color:#ff1493;font-size:16px;font-weight:900">💖 9 Real Photos • 250-2000 • FREE Delivery</h2>
+<p style="font-size:11px;color:#6b7280">Shiny prices • Book online at deposit • Menyinkwa • 0116162159</p>
+</div>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+
+<!-- MORE PRODUCTS -->
+<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:16px;margin:16px;padding:20px;text-align:center">
+<h3 style="font-size:15px;font-weight:900">100+ More Products In Store! 🛍️</h3>
+<p style="font-size:12px;color:#6b7280;margin:8px 0">Cargo • Dresses • Tops • Sets • Shoes • Bags — Menyinkwa</p>
+<a href="https://wa.me/254116162159?text=Hi%20BestLady%20Menyinkwa%20I%20want%20to%20see%20more%20products" class="btn btn-black">View More on WhatsApp</a>
+<a href="tel:0116162159" class="btn" style="background:#fff;border:1px solid #e5e7eb">Call 0116162159</a>
+</div>
+
+<!-- BOOK AT DEPOSIT -->
+<div class="booking" id="booking">
+<h3 style="font-size:15px;font-weight:900;margin-bottom:8px">📦 Book Online At Deposit</h3>
+<p style="font-size:12px;color:#6b7280;margin-bottom:12px">Lipa deposit kidogo u-book item yako • Pay small deposit • Balance on delivery • FREE Delivery Menyinkwa • M-Pesa 0116162159</p>
+<select id="bookProduct"></select>
+<input id="bookName" placeholder="Your Name">
+<input id="bookPhone" placeholder="Phone e.g. 0116162159">
+<input id="bookDeposit" type="number" placeholder="Deposit Amount e.g. 200">
+<button onclick="bookNow()" style="width:100%;margin-top:10px;padding:14px;background:linear-gradient(90deg,#ff1493,#ff69b4);color:#fff;border:none;border-radius:12px;font-weight:900;cursor:pointer">Book Now via WhatsApp 💖</button>
+</div>
+
+<div style="background:#111;color:#fff;text-align:center;padding:20px">
+<div style="font-weight:900">👑 BestLady Comrade</div>
+<div style="font-size:12px;margin:6px 0">📍 Menyinkwa • 📞 0116162159 • FREE Delivery</div>
+<div style="font-size:11px;opacity:.7">M-Pesa • Pay on Delivery • Book at Deposit</div>
+</div>
+
+<div class="cart" id="cart">
+<div class="cart-header"><span id="cartTitle">Bag (0)</span><span style="cursor:pointer" onclick="closeCart()">✕</span></div>
+<div id="cartItems" style="padding:12px"></div>
+<div style="padding:16px;border-top:1px solid #fecdd3">
+<div style="display:flex;justify-content:space-between;margin:6px 0"><span>Subtotal</span><span id="subtotal">Ksh 0</span></div>
+<div style="display:flex;justify-content:space-between;margin:6px 0;color:#16a34a;font-weight:700"><span>FREE Delivery</span><span>Menyinkwa</span></div>
+<div style="display:flex;justify-content:space-between;font-weight:900;font-size:18px;margin:12px 0"><span>Total</span><span id="total">Ksh 0</span></div>
+<button onclick="checkout()" style="width:100%;padding:14px;background:#111;color:#fff;border:none;border-radius:12px;font-weight:900;cursor:pointer">Checkout WhatsApp</button>
+<button onclick="closeCart()" style="width:100%;margin-top:8px;padding:12px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;font-weight:700;cursor:pointer">Continue Shopping</button>
+</div>
+</div>
+
+<script>
+const products = [
+{id:1,name:"Mood The Cup Tumbler 1200ml - 4 Colors",price:250,oldPrice:600,cat:"Accessories",img:"https://images.unsplash.com/photo-1544787219-7f47cc556762?w=400"},
+{id:2,name:"LOEWE Embroidered Denim Shorts",price:350,oldPrice:850,cat:"Shorts",img:"https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=400"},
+{id:3,name:"High-Waist Denim Jorts 5 Colors",price:400,oldPrice:900,cat:"Shorts",img:"https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400"},
+{id:4,name:"TF Gold Logo Flats White Strappy",price:650,oldPrice:1500,cat:"Flats",img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"},
+{id:5,name:"TF FF Slides Beige - Comfy",price:700,oldPrice:1600,cat:"Slides",img:"https://images.unsplash.com/photo-1603808033176-935819eb3b2d?w=400"},
+{id:6,name:"TF FF Monogram Platform Black",price:800,oldPrice:1700,cat:"Slides",img:"https://images.unsplash.com/photo-1560343090-f4df9e18b80e?w=400"},
+{id:7,name:"TF Cross Striped Slides Black White",price:850,oldPrice:1800,cat:"Slides",img:"https://images.unsplash.com/photo-1603808033176-935819eb3b2d?w=400"},
+{id:8,name:"TF Strappy Cross Sandals White Gold Buckle",price:900,oldPrice:1900,cat:"Sandals",img:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"},
+{id:9,name:"AIRFORCE",price:2000,oldPrice:3500,cat:"Sneakers",img:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"}
+];
+let cart=[]; let activeFilter='All';
+const allFilters=['All','250-500','500-1000','1000-2000','Shorts','Slides','Flats','Sandals','Sneakers','Accessories'];
+function renderFilters(){const f=document.getElementById('filters');f.innerHTML='';allFilters.forEach(fl=>{const b=document.createElement('button');b.textContent=fl+(fl==='All'?' 9':'');if(fl===activeFilter)b.classList.add('active');b.onclick=()=>{activeFilter=fl;renderFilters();renderGrid();};f.appendChild(b);});}
+function getFiltered(){if(activeFilter==='All')return products;if(activeFilter==='250-500')return products.filter(p=>p.price<=500);if(activeFilter==='500-1000')return products.filter(p=>p.price>500&&p.price<=1000);if(activeFilter==='1000-2000')return products.filter(p=>p.price>1000);return products.filter(p=>p.cat===activeFilter);}
+function renderGrid(){const grid=document.getElementById('grid');grid.innerHTML='';getFiltered().sort((a,b)=>a.price-b.price).forEach(p=>{const disc=Math.round((1-p.price/p.oldPrice)*100);const isAir=p.name==='AIRFORCE';const div=document.createElement('div');div.className='card';if(isAir)div.style.border='3px solid #ff1493';div.innerHTML=`<div class="img-wrap"><img src="${p.img}" loading="lazy"><span class="badge-off">-${disc}%</span><span class="badge-free">FREE</span>${isAir?'<span style="position:absolute;bottom:8px;left:8px;background:linear-gradient(90deg,#facc15,#ff1493);color:#fff;font-size:9px;font-weight:900;padding:4px 8px;border-radius:8px">🔥 BEST SELLER AIRFORCE</span>':''}</div><div style="padding:10px"><div style="font-size:12px;font-weight:700;line-height:1.3;height:32px;overflow:hidden;${isAir?'color:#ff1493;text-transform:uppercase;font-size:14px':''}">${p.name}</div><div style="font-size:11px;color:#9ca3af;text-decoration:line-through">Ksh ${p.oldPrice}</div><div><span class="new" style="${isAir?'font-size:18px':''}">Ksh ${p.price}</span></div><div style="font-size:10px;color:#16a34a;font-weight:700;margin-top:4px">FREE Delivery Menyinkwa</div><div style="display:flex;gap:6px;margin-top:8px"><button class="add" onclick="addToCart(${p.id})">Add Bag</button><button class="wa" onclick="orderWa(${p.id})">💬</button></div></div>`;grid.appendChild(div);});}
+function addToCart(id){const ex=cart.find(c=>c.id===id);if(ex)ex.qty++;else cart.push({id,qty:1});updateCart();openCart();}
+function updateCart(){document.getElementById('cartCount').textContent='🛒 '+cart.reduce((s,c)=>s+c.qty,0);document.getElementById('cartTitle').textContent='Bag ('+cart.reduce((s,c)=>s+c.qty,0)+')';let sub=0;const items=document.getElementById('cartItems');items.innerHTML='';cart.forEach(ci=>{const p=products.find(x=>x.id===ci.id);sub+=p.price*ci.qty;const row=document.createElement('div');row.style.display='flex';row.style.gap='10px';row.style.marginBottom='12px';row.innerHTML=`<img src="${p.img}" style="width:56px;height:56px;object-fit:cover;border-radius:10px"><div style="flex:1"><div style="font-size:12px;font-weight:700">${p.name}</div><div style="font-size:12px;font-weight:900">Ksh ${p.price}</div><div style="display:flex;gap:8px;margin-top:4px"><button onclick="changeQty(${ci.id},-1)" style="width:28px;height:28px;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer">-</button><span style="padding:4px;font-size:12px;font-weight:700">${ci.qty}</span><button onclick="changeQty(${ci.id},1)" style="width:28px;height:28px;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer">+</button></div></div>`;items.appendChild(row);});document.getElementById('subtotal').textContent='Ksh '+sub;document.getElementById('total').textContent='Ksh '+sub;}
+function changeQty(id,d){const c=cart.find(x=>x.id===id);if(!c)return;c.qty+=d;if(c.qty<=0)cart=cart.filter(x=>x.id!==id);updateCart();}
+function openCart(){document.getElementById('cart').classList.add('open')}function closeCart(){document.getElementById('cart').classList.remove('open')}
+function orderWa(id){const p=products.find(x=>x.id===id);const msg=`Hi BestLady Menyinkwa STORE%0A%0AI want to order:%0A- ${p.name} Ksh ${p.price}%0A%0AFREE Delivery Menyinkwa%0APay on Delivery%0ABook at Deposit`;window.open('https://wa.me/254116162159?text='+msg,'_blank');}
+function checkout(){if(cart.length===0){alert('Bag empty');return}let msg='Hi BestLady Menyinkwa STORE%0A%0AI want to order:%0A';let tot=0;cart.forEach(ci=>{const p=products.find(x=>x.id===ci.id);msg+=`- ${p.name} x${ci.qty} Ksh ${p.price*ci.qty}%0A`;tot+=p.price*ci.qty;});msg+=`%0ATotal Ksh ${tot}%0A%0AFREE Delivery Menyinkwa%0APay on Delivery%0ABook at Deposit available%0A`;window.open('https://wa.me/254116162159?text='+msg,'_blank');}
+function bookNow(){const sel=document.getElementById('bookProduct');const pId=parseInt(sel.value);const p=products.find(x=>x.id===pId);const name=document.getElementById('bookName').value;const phone=document.getElementById('bookPhone').value;const dep=document.getElementById('bookDeposit').value;if(!name||!phone||!dep){alert('Fill all');return}const msg=`Hi BestLady BOOKING Menyinkwa%0A%0AProduct: ${p.name} Ksh ${p.price}%0AName: ${name}%0APhone: ${phone}%0ADeposit: Ksh ${dep}%0ABalance: Ksh ${p.price-dep}%0A%0AFREE Delivery Menyinkwa%0A`;window.open('https://wa.me/254116162159?text='+msg,'_blank');}
+function initBook(){const sel=document.getElementById('bookProduct');products.forEach(p=>{const o=document.createElement('option');o.value=p.id;o.textContent=p.name+' - Ksh '+p.price;sel.appendChild(o);});}
+renderFilters();renderGrid();initBook();
+</script>
+</body>
+</html>
